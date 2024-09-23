@@ -169,7 +169,7 @@ a:hover {
     }
 
     header {
-        order: 1; /* Asegurar que el header esté primero */
+        order: 0; /* Asegurar que el header esté primero */
         width: 100%; /* Asegurar que ocupe todo el ancho */
     }
 
@@ -199,35 +199,35 @@ a:hover {
 
     /* Orden correcto de las secciones */
     .sobre-mi {
-        order: 2;
+        order: 1;
     }
 
     .contacto {
-        order: 3;
+        order: 2;
     }
 
     .proyectos {
-        order: 4;
+        order: 3;
     }
 
     .experiencia {
-        order: 5;
+        order: 4;
     }
 
     .formacion {
-        order: 6;
+        order: 5;
     }
 
     .habilidades {
-        order: 7;
+        order: 6;
     }
 
     .idiomas {
-        order: 8;
+        order: 7;
     }
 
     .otros-datos {
-        order: 9;
+        order: 8;
     }
 
     /* Ajustes de espaciado para secciones */
