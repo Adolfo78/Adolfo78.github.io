@@ -157,6 +157,7 @@ a:hover {
     text-decoration: none; /* Mantiene el botón sin subrayado al hacer hover */
 }
 
+/* Media Query para dispositivos móviles (smartphone) */
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
@@ -164,11 +165,75 @@ a:hover {
 
     .left-column, .right-column {
         max-width: 100%;
+        padding: 10px;
+    }
+
+    header {
+        order: 1; /* Asegurar que el header esté primero */
+        width: 100%; /* Asegurar que ocupe todo el ancho */
     }
 
     header .header-content {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center; /* Alinear el contenido al centro */
+        text-align: center; /* Alinear los títulos al centro */
+        margin-bottom: 20px;
+    }
+
+    header .titles {
+        align-items: center; /* Centramos los títulos */
+        text-align: center;  /* Centramos el texto */
+        width: 100%; /* Aseguramos que ocupe el ancho */
+    }
+
+    header img {
+        margin: 20px auto; /* Mantener la imagen centrada */
+        display: block;
+    }
+
+    /* Reordenar secciones en el orden correcto */
+    .right-column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Orden correcto de las secciones */
+    .sobre-mi {
+        order: 2;
+    }
+
+    .contacto {
+        order: 3;
+    }
+
+    .proyectos {
+        order: 4;
+    }
+
+    .experiencia {
+        order: 5;
+    }
+
+    .formacion {
+        order: 6;
+    }
+
+    .habilidades {
+        order: 7;
+    }
+
+    .idiomas {
+        order: 8;
+    }
+
+    .otros-datos {
+        order: 9;
+    }
+
+    /* Ajustes de espaciado para secciones */
+    section {
+        margin-bottom: 20px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #ccc;
     }
 }
-
