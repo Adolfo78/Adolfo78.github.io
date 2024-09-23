@@ -34,14 +34,23 @@ body {
     max-width: 65%;
 }
 
-header .header-content {
+
+.header-content {
     display: flex;
-    justify-content: space-between;  /* Alinea el contenido entre extremos */
-    align-items: center;          /* Alinea verticalmente */
-    gap: 30px;                    /* Aumenta el espacio entre los títulos y la imagen */
-    padding-left: 50px;
+    flex-direction: column; /* Cambiar a columna en móviles */
+    align-items: center; /* Centra los títulos y la imagen */
+    gap: 10px; /* Espacio entre títulos e imagen */
 }
 
+ section {
+    text-align: center;
+}
+header {
+    display: flex;
+    flex-direction: column; /* Cambia a columna en móviles */
+    align-items: center; /* Centra el contenido */
+    margin-bottom: 20px; /* Espacio debajo del header */
+}
 header .titles {
         display: flex;
         flex-direction: column;
@@ -156,9 +165,6 @@ a:hover {
 #download-pdf a:hover {
     text-decoration: none; /* Mantiene el botón sin subrayado al hacer hover */
 }
-
-/* Media Query para dispositivos móviles (smartphone) */
-
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
@@ -185,4 +191,4 @@ a:hover {
     .left-column{
         order:2;
     }
-} 
+}
