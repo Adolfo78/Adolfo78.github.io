@@ -11,7 +11,10 @@ body {
     color: #333;
     padding: 20px;
 }
-
+span{
+    color: #34495e;
+    font-weight: bold;
+}
 .container {
     display: flex;
     flex-wrap: wrap;
